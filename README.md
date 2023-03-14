@@ -1,10 +1,10 @@
-Ekleme Sıralaması / [22,27,16,2,18,6]
+Verilen dizi [22,27,16,2,18,6]
 
 [2, 27, 16, 22, 18, 6]
 [2, 6, 16, 22, 18, 27]
 [2, 6, 16, 22, 18, 27]
 [2, 6, 16, 18, 22, 27]
-Büyük O / O(n^2) 18 adet Ortalama Kasa kapsamıdır
+Büyük O / O(n^2) 18 Ortalama Kasa kapsamıdır
 
 Seçim Sıralaması / [7,3,5,8,2,9,4,15,6]
 
