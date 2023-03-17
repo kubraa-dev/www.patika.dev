@@ -1,0 +1,25 @@
+public class calisma {
+
+
+    public static void main(String[] args) {
+
+        double armut=2.14,elma=3.67,muz=0.95,patlican=5,toplam;
+        double a,e,m,p;
+
+        Scanner veri=new Scanner(System.in);
+
+        System.out.print("Armut kac kg:");
+        a =veri.nextDouble();
+
+        System.out.print("Elma kaç kg:");
+        e = veri.nextDouble();
+
+
+        System.out.print("Muz kaç kg:");
+        m = veri.nextDouble();
+
+        System.out.print("Patlıcan kaç kg:");
+        p = veri.nextDouble();
+
+        toplam=((armut*a)+(elma*e)+(muz*m)+(patlican*p));
+        System.out.print("Toplam tutar:"+toplam);
