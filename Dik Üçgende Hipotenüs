@@ -1,0 +1,20 @@
+import java.util.Scanner;
+public class calisma {
+
+
+    public static void main(String[] args) {
+        int akenari,bkenari;
+        double ckenari;
+//scanner tanımla
+        Scanner input = new Scanner(System.in);
+//yazdır
+        System.out.print("Kaner uzunluğu gir:");
+        akenari=input.nextInt();
+
+        System.out.print("Kenar uzunluğu gir:");
+        bkenari=input.nextInt();
+
+         ckenari=Math.sqrt(akenari*akenari)+(bkenari*bkenari);
+         System.out.print("Hipotenüs= "+ckenari);
+    }
+}
