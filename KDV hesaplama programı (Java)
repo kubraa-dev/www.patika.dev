@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+    double tutar,kdvOrani=1.8,kdvtutari,kdvlitutar;
+
+    Scanner input = new Scanner(System.in);
+
+    System.out.print("Ücret tutarını giriniz:");
+    tutar=input.nextDouble();
+
+    kdvtutari= tutar*kdvOrani;
+    kdvlitutar= tutar+kdvtutari;
+    System.out.println("KDV tutarı:"+kdvtutari);
+    System.out.println("Kdvli tutar:"+kdvtutari);
