@@ -1,0 +1,38 @@
+import java.util.Scanner;
+
+public class calisma {
+
+
+    public static void main(String[] args) {
+
+        Scanner girdi = new Scanner(System.in);
+
+        String KAdi,Sifre;
+        int Ysifre;
+
+        System.out.print("Kullanıcı adını giriniz: ");
+        KAdi = girdi.nextLine();
+
+        System.out.print("Şifreyi giriniz: ");
+        Sifre = girdi.nextLine();
+
+        if (KAdi.equals("patika") && Sifre.equals("java123")){
+            System.out.print("Giriş yaptınız");
+        }
+        else {
+             System.out.println("Yanlış giriş yaptınız");
+        }
+              System.out.print("Şifrenizi sıfırlamak istiyor musunuz?\n1-EVET: ");
+             Ysifre = girdi.nextInt();
+
+        switch (Ysifre){
+            case 1:
+                System.out.print("Yeni şifrenizi giriniz:");
+                Ysifre = girdi.nextInt();
+                System.out.print("Yeni şifre oluşturuldu.");
+               break;
+
+                }
+        }
+
+
