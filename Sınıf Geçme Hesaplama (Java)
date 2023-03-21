@@ -1,0 +1,61 @@
+import java.util.Scanner;
+
+public class calisma {
+
+
+    public static void main(String[] args) {
+
+        Scanner girdi = new Scanner(System.in);
+
+        int mat,fizk,turkc,kimya,muzk;
+
+        System.out.print("Matamatik notunu giriniz:");
+        mat = girdi.nextInt();
+        if (mat < 0 || mat > 100){
+            mat = 0;
+            System.out.println("Geçerli not giriniz!");
+        }
+
+        System.out.print("Fizik notunu giriniz:");
+        fizk = girdi.nextInt();
+        if (fizk < 0 || fizk > 100){
+            fizk = 0;
+            System.out.println("Geçerli not giriniz!");
+        }
+
+        System.out.print("Türkçe notunu giriniz:");
+        turkc = girdi.nextInt();
+        if (turkc < 0 || turkc > 100){
+            turkc = 0;
+            System.out.println("Geçerli not giriniz!");
+        }
+
+        System.out.print("Kimya notunu giriniz:");
+        kimya = girdi.nextInt();
+        if (kimya < 0 || kimya > 100){
+            kimya = 0;
+            System.out.println("Geçerli not giriniz!");
+        }
+
+        System.out.print("Müzik notunu giriniz:");
+        muzk = girdi.nextInt();
+        if (muzk < 0 || muzk > 100){
+            muzk = 0;
+            System.out.println("Geçerli not giriniz!");
+        }
+
+        double ort = (mat + turkc + muzk + fizk + kimya) / 5;
+
+
+        if (ort <= 55) {
+            System.out.println("Sınıfta kaldınız!");
+        }
+        else {
+                System.out.println("Sınıfı geçtiniz!");
+            }
+            System.out.println("Ortalamanız: "+ ort);
+        }
+
+
+
+}
