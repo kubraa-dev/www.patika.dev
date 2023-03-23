@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Scanner inp = new Scanner(System.in);
+
+        int yil;
+        boolean sonuc = false;
+
+        System.out.print("Yıl giriniz: ");
+        yil = inp.nextInt();
+
+        if (yil %4 == 0){
+            sonuc = true;
+
+        if (yil > 0){
+                System.out.print(yil+ "Artık yıldır.");
+            }
+
+        }else {
+            sonuc = false;
+            System.out.print(yil+" Artık yıl değildir.");
+        }
+    }
+}
