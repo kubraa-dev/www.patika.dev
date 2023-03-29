@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class calisma {
+
+    public static void main(String[] args) {
+        int number;
+        int tempNum;
+        int basNum, result = 0;
+
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Sayı giriniz: ");
+        number = input.nextInt();
+
+        // tempnumber değişkeni while döngüsündeki number değişkenin döngü
+        // çıktısında değerini korumasını sağlar.
+
+        tempNum = number;
+        while (tempNum != 0) {
+            basNum = tempNum % 10;
+            tempNum /= 10;
+            result += basNum;
+        }
+        System.out.print("Basamakların toplamı : "+result);
+    }
+}
