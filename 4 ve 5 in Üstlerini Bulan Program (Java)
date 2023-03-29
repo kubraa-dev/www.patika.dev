@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+public class calisma {
+
+    public static void main(String[] args) {
+        //Java döngüler ile girilen sayıya kadar
+        // olan 4 ve 5'in kuvvetlerini ekrana yazdıran programı yazıyoruz.
+        
+        Scanner scan = new Scanner(System.in);
+
+        int n, select;
+
+        System.out.println("4'ün katı ise 1. 5'in katı ise 2. basınız: ");
+        select = scan.nextInt();
+
+        System.out.print("Sınır giriniz: ");
+        n = scan.nextInt();
+
+        switch (select) {
+            case 1:
+                for (int i = 1; i < n; i *= 4) {
+                    System.out.println(i);
+                }
+                break;
+
+            case 2:
+
+                for (int i = 1; i < n; i *= 5) {
+                    System.out.println(i);
+
+                }
+                break;
+        }
+    }
+}
