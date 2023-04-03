@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class calisma {
+    public static void main(String[] args) {
+        Scanner inp = new Scanner(System.in);
+
+        int n;
+        System.out.print("Bir n sayısı giriniz: ");
+        n = inp.nextInt();
+        // harmonik sayı formülü: 1+(1/2)+(1/3)+(1/n)
+        // double tanımlanır çünkü ondalıklı çıkar sonuç
+        double resault = 0;
+        // döngü:
+        for(double i = 1; i <= n; i++){
+            resault += (1/i);
+        }
+        System.out.print(resault);
+    }
+}
