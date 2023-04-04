@@ -1,0 +1,38 @@
+import java.util.Scanner;
+
+public class calisma {
+    public static void main(String[] args) {
+
+        Scanner inp = new Scanner(System.in);
+
+       //Java ile klavyeden girilen N
+        //tane sayma sayısından en büyük ve
+        //en küçük sayıları bulan ve bu sayıları
+        //ekrana yazan programı yazın.
+
+        int n;
+        int sayi,resault,enb,enk;
+
+        System.out.print("How many enter number:");
+        n = inp.nextInt();
+
+        System.out.print("1.number enter:");
+        sayi = inp.nextInt();
+        enb = sayi;
+        enk = sayi;
+
+        for (int i=1 ; i<=n-1; i++){
+            System.out.print(i+1 +".number enter: ");
+            sayi = inp.nextInt();
+            if (sayi<enk){
+                enk=sayi;
+            }else if (sayi>enb){
+                enb=sayi;
+            }}
+
+            System.out.println("The largest number is "+enb);
+            System.out.println("The smallest number is "+enk);
+
+
+            }
+        }
